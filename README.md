@@ -1,1 +1,1 @@
-# Currículo digital criado apenas com HTML5 + CSS
+# Currículo digital estático criado apenas com HTML5 + CSS
