@@ -5,13 +5,13 @@ html {
   font-size: 14px;
   padding: 2em;
   line-height: 1.2em;
-  background: linear-gradient(.45deg, #74D6DC, #FD89AC, #666);
-  color: white;
+  background: linear-gradient(0.45deg, #fff, #74d6dc, #fd89ac);
+  color: black;
 }
 
 h1 {
-  margin-bottom: .5em;
-  color: white;
+  margin-bottom: 0.5em;
+  color: black;
 }
 
 h2 {
@@ -19,13 +19,13 @@ h2 {
 }
 
 h3 {
-  border-bottom: .175em solid white;
-  padding-left: .75em;
-  padding-bottom: .2em;
+  border-bottom: 0.175em solid white;
+  padding-left: 0.75em;
+  padding-bottom: 0.2em;
   margin-top: 0;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-size: 1.35em;
-  color: white;
+  color: black;
 }
 
 h4 {
@@ -34,20 +34,44 @@ h4 {
 
 ul {
   margin-top: 0;
-  margin-bottom: .675em;
+  margin-bottom: 0.675em;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: .675em;
+  margin-bottom: 0.675em;
 }
 
 code {
-  background-color: rgb(230,230,230);
+  background-color: rgb(230, 230, 230);
 }
 
 header {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
+}
+
+header > span {
+  display: flex;
+  justify-content: flex-end;
+}
+.button {
+  display: inline-block;
+  background-color: #83f9ff9d;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 34px;
+  color: #3d3d3d;
+  box-shadow: 1px 1px 1px black;
+  padding: 3px 17px;
+  margin-right: 5px;
+  transition: transform 100ms cubic-bezier(0.45, 0.97, 0.68, 2.48);
+  border-radius: 3px;
+  text-decoration: none;
+}
+.button:hover {
+  transform: scale(1.06);
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.781);
 }
 
 section {
@@ -55,7 +79,7 @@ section {
 }
 
 section .inner {
-  padding: 0 .9em;
+  padding: 0 0.9em;
 }
 
 section .inner .tricolumn {
@@ -78,45 +102,46 @@ section .inner .tricolumn p {
 }
 
 section .inner a {
+  margin-left: 1rem;
   font-style: italic;
   color: #02c0fd;
-  text-decoration: inherit;
-  transition: .5s;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 section .inner a:hover {
-  color: rgba(255, 255, 255, 0.279);
+  color: white;
 }
 
 section .inner a:last-of-type {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
-header>.top {
+header > .top {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
-header>.top a {
+header > .top a {
   color: inherit;
   text-decoration: inherit;
 }
 
-header>.top>.left {
+header > .top > .left {
   display: flex;
   flex-direction: column;
   margin-right: auto;
 }
 
-header>.top>.right {
+header > .top > .right {
   display: flex;
   flex-direction: column;
   margin-left: auto;
 }
 
-header>.bottom h2 {
+header > .bottom h2 {
   text-align: center;
 }
 
@@ -156,12 +181,13 @@ footer .wrapper:after {
 
 .img-footer {
   display: flex;
-  width: 80%;
+  justify-content: center;
+  width: 100%;
 }
-.img-footer>img {
-  max-width: 250px;
-  height: 190px;
-  border-radius: 180%;
+.img-footer > img {
+  width: 150px;
+  height: 140px;
+  border-radius: 50%;
   border-style: solid;
 }
 
@@ -179,31 +205,30 @@ footer .wrapper:after {
 .footer-list-contact li {
   height: 96px;
   font-size: 30px;
-  
 }
 .wpp {
-  transition: .5s;
+  transition: 0.5s;
 }
 .wpp:hover {
-  color: #25D366;
+  color: #25d366;
 }
 
 .linkedin {
-  transition: .5s;
+  transition: 0.5s;
 }
 .linkedin:hover {
-  color: #008BF5;
+  color: #008bf5;
 }
 
 .github {
-  transition: .5s;
+  transition: 0.5s;
 }
 .github:hover {
   color: black;
 }
 
 .mail {
-  transition: .5s;
+  transition: 0.5s;
 }
 .mail:hover {
   color: red;
@@ -214,7 +239,6 @@ footer .wrapper:after {
   margin-top: 30px;
   float: left;
 }
-
 
 #projects .inner {
   max-height: 30em;
@@ -228,7 +252,7 @@ footer .wrapper:after {
 }
 
 #projects .inner .wrap ul {
-  margin-top: .125em;
+  margin-top: 0.125em;
 }
 
 .wrapper {
@@ -266,7 +290,6 @@ footer .wrapper:after {
     width: 100%;
     height: 100%;
     font-size: 9px;
-
   }
 
   #projects .inner .wrap ul {
@@ -281,4 +304,3 @@ footer .wrapper:after {
     width: 20%;
   }
 }
-
